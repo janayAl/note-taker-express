@@ -25,20 +25,21 @@ app.get("/api/notes", (req, res) => {
    
     
 })
-
-
-
-// app.post("api/notes", (req, res) => {
+// app.post("/notes", (req, res) => {
 //     res.sendFile(path.join(__dirname, "public/notes.html"))
 // })
-app.post("/api/notes",(req, res) => {
+app.post("/notes",(req, res) => {
     const notes = readNotes ();
     const note = req.body;
     console.log(note);
     notes.push(note);
-    fs.writeFileSync(path.join(__dirname, 'db/db.json'),JSON.stringify(notes))
+    fs.readileSync(path.join(__dirname, 'db/db.json'),JSON.stringify(notes))
     res.json(note);
+
+require('/notes')(app);
+require('/api/notes')(app);
 })
+
 //listening
 app.listen(PORT, ()=>{
     console.log("listening to Port")
