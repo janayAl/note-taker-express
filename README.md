@@ -5,4 +5,7 @@ The following app is a note taker app designed with node.js. Once the user click
 Github:
 https://github.com/janayAl/note-taker-express
 
+Heroku Deployed Link:
+https://jallen-note-taker-express.herokuapp.com/
+
 <img width="1329" alt="Screen Shot 2021-07-26 at 8 06 53 PM" src="https://user-images.githubusercontent.com/82891366/127078795-5ea5c9f9-d8ce-436b-9cf8-c6d3d512ef94.png">
